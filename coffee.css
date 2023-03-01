@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lato:wght@300&display=swap');
+*{
+    /* background-color: rgb(34, 31, 31); */
+    margin:0;
+    padding:0;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    color:white;
+}
+body{
+    background-color: rgb(37, 35, 35);
+}
+html{
+    scroll-behavior: smooth;
+}
+#first{
+    height:90vh;
+    width:100%;
+    background-image:
+    linear-gradient(to bottom, rgba(11, 11, 11, 0.85), rgba(7, 7, 7, 0.8)),
+    url(cofc.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.logo span{
+    color:brown;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding:1% 4%;
+    position:fixed;
+    width:100%;
+    background-color: rgb(79, 73, 73);
+}
+nav ul li{
+    display: inline-block;
+    padding:0 0.8rem;
+}
+nav ul li a{
+    color:white;
+    font-size:1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:brown;
+    transition: 0.3s;
+}
+nav h2{
+    font-size:2rem;
+}
+.text{
+    /* margin-top:11rem; */
+    text-align:left;
+    padding:17rem 7rem;
+}
+.text h2{
+    font-weight: 200;
+    font-size:2.5rem;
+    padding:1rem 0;
+}
+.text h3{
+    font-weight:200;
+    color:#ccc;
+    font-size:1.7rem;
+}
+.text p{
+    font-size:1.1rem;
+    font-weight: 200;
+}
+/* End of nav and background css */
+
+/* Css start of About */
+#second{
+    padding-top:3rem;
+}
+.new{
+    margin-top:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 90%; */
+}
+.no{
+    flex-basis: 40%;
+}
+.no h2{
+    text-align: center;
+    font-weight: 200;
+    font-size:1.6rem;
+    padding-bottom: 1rem;
+}
+.no p{
+    color:#ccc;
+    text-align:justify;
+}
+.no video{
+    height:90%;
+    width:90%;
+    border:2px solid brown;
+    padding:0.5rem;
+}
+/* Css end of about */
+
+/* Css start of services */
+#third{
+    padding-top:3rem;
+}
+#third h1{
+    font-weight: 200;
+    text-align: center;
+    margin-top:2rem;
+    font-size:1.9rem;
+}
+.service{
+    width:92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1rem;
+    text-align: center;
+}
+.service .on .fa{
+    font-size:4rem;
+    color:rgb(0, 255, 255);
+    padding:0.5rem;
+}
+.on h2{
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+/* Css end of services */
+
+/* Css start of Contact */
+#fourth,h1{
+    margin:2rem;
+    text-align: center;
+    font-size:1.9rem;
+    font-weight: 200;
+}
+.new{
+    display: flex;
+    justify-content: space-around;
+}
+.old .fa{
+    font-size:15rem;
+    color:rgb(245, 0, 192);
+    transition:all 0.3s ease-in-out;
+}
+.old .fa:hover{
+    font-size:15.2rem;
+    color:rgb(255, 0, 200);
+}
+input,textarea{
+    width:60%;
+    padding:0.5rem;
+    margin:1rem;
+    background:none;
+    border:1px solid gray;
+}
+::placeholder{
+    color:white;
+}
+form .but{
+    padding:1rem;
+    width:9.375rem;
+    background-color: rgba(245,0,192,0.7);
+    cursor: pointer;
+    transition:all 0.2s ease-in-out;
+    border:none;
+}
+form .but:hover{
+    background-color: rgb(255, 0, 200);
+}
+footer{
+    text-align: center;
+    background-color: rgb(79, 73, 73);
+    padding:1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.7;
+}
+footer h3{
+    font-weight: 200;
+}
+footer .ico .fa{
+    padding:0rem 1rem 1rem;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+footer .ico .fa-facebook:hover{
+    color: #3b5998;
+}
+footer .ico .fa-instagram:hover{
+    color:red;
+}
+footer .ico .fa-twitter:hover{
+    color:#1DA1F2;
+}
